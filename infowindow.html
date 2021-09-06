@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="/appFunctions.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>LuaX</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+      margin-right: 50%;
+      color: orange;
+    }
+    .base-border {
+        margin-left:3%;
+        width: 900px;
+        height: 400px;
+        background-color: gray;
+    }
+
+</style>
+<body>
+    <div class="info-page-left" id="ifbl">
+          <h3>Start</h3>
+        <button class="far fa-edit" id="open-editor" onclick="label1()" > Editor</button>
+        <button class="far fa-file" id="new-file" onclick="label1()"> New File</button>
+        <button class="far fa-folder-open" id="open-file" onclick="label1()"> Open</button>
+        <button class="far fa-comments" id="chat" onclick="label1()"> Chat</button>
+        <h3>Recent</h3>
+    </div>
+    <div class="info-page-right" id="ifbr">
+        <h3>Learn</h3>
+        <div class="label-one" id="fiveM1" onclick="fiveM()">
+            <p>FiveM<br>Get to know FiveM basics & more.</p>
+        </div>
+        <div class="label-two" id="l1" onclick="label1()">
+            <p>Overview & basics<br>click me to begin</p>
+        </div>
+        <div class="label-three" id="l1" onclick="label1()">
+            <p>Overview & basics<br>click me to begin</p>
+        </div>
+
+        <h4 class="fab fa-discord" id="join-d" onclick="joindiscord()"> Join Discord</h4>
+
+        <h3>Get to know LuaX</h3>
+        <div class="label-one" id="l1" onclick="label1()">
+            <p>Intro<br>click me to begin</p>
+        </div>
+        <div class="label-two" id="l1" onclick="label1()">
+            <p>Functions<br>click me to begin</p>
+        </div>
+        <div class="label-three" id="l1" onclick="label1()">
+            <p>Misc<br>click me to begin</p>
+        </div>
+        <br>
+        <div class="pictures" id="pic">
+            
+        </div>
+  </div>
+</body>
+<script>
+   function label1() {
+            alert('This is currently being worked on')
+    }
+
+    function fiveM() {
+            document.getElementById('fiveM1').onclick=(location.href="fivemwindow.html")
+    }
+
+    function joindiscord() {
+         window.open('https://discord.gg/26nRZPAbsm')
+    }
+</script>
+</html>

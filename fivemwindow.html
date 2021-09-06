@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y51PTFmhCaXp0ML5d60M1M1uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>LuaX</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+      margin-right: 0%;
+      color: orange;
+      -webkit-box-sizing: border-box;
+      text-shadow:
+      0 0 5px #FFA500,
+      0 0 1px #FFA500,
+      0 0 1px #FFA500,
+      0 0 1px #FFA500,
+      0 0 1px #FFA500,
+      0 0 1px #FFA500,
+      0 0 1px #FFA500,
+      0 0 1px #FFA500;
+    }
+    .base-border {
+        margin-left: 39px;
+        width: 920px;
+        height: 651px;
+        background-color: rgb(39, 39, 39);
+        border-radius: 5px;
+        -webkit-box-sizing: border-box;
+    }
+    #inside-border {
+        width: 910px;
+        height: 685px;
+        background-color:transparent;
+        border-radius: 5px;
+    }
+    #carsl {
+        width: 900px;
+        height: 155px;
+        margin-left: 10px;
+        background-color: #252525f6;
+        border-radius: 4px;
+    }
+    #carsl:hover {
+        background-color: rgba(34, 34, 34, 0.788);
+        cursor: pointer;
+    }
+    .carstext {
+     color: orange;
+     font-weight: bold;
+     border-bottom: 1px solid white;
+    }
+    #back1 {
+        margin-left: 94%;
+        border: none;
+        background-color: transparent;
+        color: white;
+
+    }
+    #back1:hover {
+        background-color: rgb(58, 58, 58);
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    h5 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+</style>
+<body>
+    <h1>FiveM</h1>
+    <h5>Developing a Server</h5>
+    <div class="base-border">
+        <button id="back1" onclick="back1f()">Back</button>
+        <div id="inside-border">
+             <div id="carsl">
+                <h4 class="carstext">Install Cars to your server</h4>
+                <p>This tutorial will walk you through on knowing how to get a vehicle from (ex.gta5mods.com) or anywhere else and put it through openIv.<br>
+                    This will hopefully get you to understand how to put any vehicle of your liking into a fiveM server</p>
+             </div>
+             <div id="carsl">
+                <h4 class="carstext">Something</h4>
+             </div>
+             <div id="carsl" style="height: 250px;">
+                <h4 class="carstext">Something</h4>
+             </div>
+             
+        </div>
+
+    </div>
+</body>
+<script>
+   function label1() {
+            alert('This is currently being worked on')
+    }
+
+    function joindiscord() {
+         window.open('https://discord.gg/26nRZPAbsm')
+    }
+
+    function back1f() {
+        document.getElementById('back1').onclick=(location.href="infowindow.html")
+    }
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>LuaX</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="/appFunctions.js"></script>
+<body>
+    <div class="side-bar">
+        <img id="editor" class="editor" src="edit.png" onclick="erroclick()">
+        <img id="settings" class="settings" src="settings.png" style="margin-top: 895px;" value="click"> 
+        <div class="settings-tab" id="settings-tab">
+         <button id="keybind-settings" onclick="erroclick()">KeyBinds</button>
+         <button id="testing-settings" onclick="erroclick()">Colors</button>
+        </div>
+    
+    </div>
+</body>
+
+<script>
+    var node = document.getElementById("settings-tab")
+   $(function() {
+       $("#settings").click(function() {
+          settingsclick()
+       })
+       $("#settings").dblclick(function() {
+        node.style.opacity = "0";
+        node.style.animationPlayState = "paused";
+       })
+
+    function settingsclick() {   
+      node.style.animationPlayState = "start";
+      node.style.opacity = "1";
+      node.style.animationPlayState = "running";
+    } 
+   })
+
+
+
+    function erroclick() {
+       alert('This is Not Implemented yet!')
+    }
+</script>
+</html>
